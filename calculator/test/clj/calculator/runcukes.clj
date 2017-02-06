@@ -9,9 +9,9 @@
                           (System/getProperties)
                           (into-array ["--format"
                                        "pretty"
-                                       "html:target/test-report"
-                                       "json:target/test-report.json"
-                                       "junit:target/test-report.xml"
+                                       "html:target/cucumber/html"
+                                       "json:target/cucumber/json/report.json"
+                                       "junit:target/cucumber/junit/test-report.xml"
                                        "--glue"
                                        "test/acceptance/step_definitions"
                                        "test/acceptance/features"]))

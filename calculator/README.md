@@ -7,7 +7,8 @@ BDD example in Clojure for a calculator
 Use the following to run all tests and produce a HTML/JSON report
 
 ```bash
-lein clean && lein cucumber  --plugin json:target/cucumber/json/report.json  --plugin html:target/cucumber/html
+lein clean &&  lein cucumber  --plugin json:target/cucumber/json/report.json --plugin html:target/cucumber/html --plugin junit:target/cucumber/junit/report.xml 
+
 ```
 
 ## License
