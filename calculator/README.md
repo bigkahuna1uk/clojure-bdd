@@ -1,10 +1,20 @@
 # calculator
 
-A Clojure library designed to ... well, that part is up to you.
+BDD example in Clojure for a calculator
 
 ## Usage
 
-FIXME
+Use the following to run all tests and produce a HTML report
+
+```bash
+lein clean && lein cucumber  --plugin html:target/test-reports
+```
+
+or JSON
+
+```bash
+lein clean && lein cucumber  --plugin json:target/test-reports.json
+```
 
 ## License
 
