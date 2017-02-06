@@ -4,16 +4,10 @@ BDD example in Clojure for a calculator
 
 ## Usage
 
-Use the following to run all tests and produce a HTML report
+Use the following to run all tests and produce a HTML/JSON report
 
 ```bash
-lein clean && lein cucumber  --plugin html:target/test-reports
-```
-
-or JSON
-
-```bash
-lein clean && lein cucumber  --plugin json:target/test-reports.json
+lein clean && lein cucumber  --plugin json:target/cucumber/json/report.json  --plugin html:target/cucumber/html
 ```
 
 ## License
