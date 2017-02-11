@@ -1,5 +1,9 @@
 (ns calculator.runcukes
-  (:require [clojure.test :refer [deftest is]])
+  ;(:require [clojure.test :refer [deftest is]]
+  ;          [taoensso.timbre :as timbre
+  ;           :refer-macros [log  trace  debug  info  warn  error  fatal  report
+  ;                          logf tracef debugf infof warnf errorf fatalf reportf
+  ;                          spy get-env]])
   (:import (cucumber.runtime RuntimeOptions)
            (cucumber.runtime.io MultiLoader)))
 
@@ -21,6 +25,7 @@
                   runtime-options)]
     (doto runtime
       (.writeStepdefsJson)
+
       (.run))
      (is (= 0 (.exitStatus runtime)))
     ))

@@ -9,4 +9,6 @@
   :cucumber-glue-paths ["test/acceptance/step_definitions"]
   :cucumber {:formatter {:type :html :path "target/cucumber/test-reports.html"}}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [info.cukes/cucumber-clojure "1.2.5"]])
+                 [info.cukes/cucumber-clojure "1.2.5"]
+                 [com.taoensso/timbre "4.8.0"]
+                 [bolth "0.1.0"]])
